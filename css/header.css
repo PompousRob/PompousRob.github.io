@@ -1,0 +1,240 @@
+
+body{
+    /* background: linear-gradient(to right, rgba(0,0,0,1.3), rgba(0,0,0,0.05)), url(toolsHeader.png); */
+    /* background: linear-gradient(to right, rgba(3, 64, 120, 1.3), rgba(0,0,0,0.05)); */
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+/*CSS for the header with headroom*/ 
+.header-wrapper{
+    display: grid;
+    /* grid-template-columns: 2fr 1fr 0.5fr; */
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid black;
+    padding-left: 5px;
+    background-color: rgba(10, 17, 40, 1);
+    height: 10vh;
+    min-height: 25px;
+}
+
+.nav-wrapper{
+  display: grid;
+  grid-template-columns: repeat(5,100px);
+  grid-gap: 5px;
+  justify-content:end;
+  align-items: center;
+  text-align: center;
+  
+  
+}
+#logo{
+  color: white;
+  display: grid;
+  float: left;
+  font-size: 1.5em;
+  text-decoration: none;
+  width: auto;
+  max-width: 300px;
+  height: 10vh;
+}
+
+.space-filler{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 10vh;
+}
+
+.social-media{
+    display: grid;
+    grid-template-columns: repeat(3, 30px);
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+
+.social-media > div > a{
+    color:white;
+}
+
+.hero-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    background-color: rgba(0, 31, 84, 1.0);
+
+}
+
+.hero-message > h2 {
+    font-size: 300%;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-variant: small-caps;
+    
+}
+
+.headroom {
+    position: fixed;
+    width:100%;
+    will-change: transform;
+    transition: transform 350ms linear!important;
+    z-index: 1000;
+    }
+
+
+.headroom--pinned{
+  transform: translateY(0%);
+  -webkit-box-shadow: 0px 6px 18px -3px rgba(0,0,0,0.4);
+  -moz-box-shadow:0px 6px 18px -3px rgba(0,0,0,0.4); ;
+  box-shadow:0px 6px 18px -3px rgba(0,0,0,0.4); ;
+}
+
+.headroom--unpinned{
+  transform: translateY(-100%)
+}
+
+/*This is the css for the collapsiable burger menu*/
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+  }
+  
+  .logo a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-size: 20px;
+    padding: 25px;
+    transition: font-size 400ms;
+  }
+
+  .logo a:hover{
+    font-size: 25px;
+
+  }
+  
+  .nav-links{ 
+    display: flex;
+   
+    justify-content: space-around;
+    width: 30%;
+  }
+  .nav-links li{
+    list-style: none;
+  }
+  
+  .nav-links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    /* padding: 10%; */
+    padding: 1.7vh 25px;
+    border-radius: 20px;
+    transition: border-radius 1000ms, color 2000ms, font-size 500ms;
+    
+  }
+
+  .nav-links li a:hover{
+    color: rgba(18, 130, 162, 1.0);
+    border-bottom: 1px solid rgba(18, 130, 162, 1.0);
+    border-right:1px solid rgba(18, 130, 162, 1.0);
+    border-radius: 0px;
+
+    font-size: 16px;
+    /* transition: 1500ms; */
+   
+  }
+  
+  .burger{
+    display: none;
+  }
+  
+  .burger div{
+    width: 28px;
+    height: 3px;
+    color: white;
+    margin: 5px;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+  
+  @media screen and (max-width: 1200px){
+    .nav-links{
+      width: 60%;
+    }
+  }
+  
+  @media screen and (max-width: 1000px){
+    body{
+      overflow-x: hidden;
+    }
+    .nav-links{
+      position: absolute;
+      right: 0px;
+      height: 90vh;
+      top: 10vh;
+      background-color: rgba(10, 17, 40, 1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-links li{
+      opacity: 0;
+    }
+    .burger{
+      display: block;
+      cursor: pointer;
+    }
+  } /*End media query*/
+  
+  .nav-active{
+    transform: translateX(0%);
+  }
+  
+  @keyframes navLinkFade{
+    from{
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  /*Turns the Burger into an X*/
+  
+  .toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2{
+    opacity: 0;
+  }
+  .toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+  }

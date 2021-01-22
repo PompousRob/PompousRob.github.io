@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+img{
+    display: block;
+}
+body{
+    background: linear-gradient(to right, rgba(0,0,0,1.3), rgba(0,0,0,0.08)), url(laptop.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+main{
+    font-family: 'Poppins', sans-serif;
+}
+/*If i set min height to 89, it doenst allow to scroll away the header. At 100vh the header can be scrolled away. This is because hte main section obviously takes up 100vh below the 11vh of hte header.*/
+.landing{
+    /* min-height: 89vh; */
+    min-height: 100vh;
+    color: white;
+    position: relative;
+    padding: 0rem 5rem;
+
+}
+
+.header-wrapper{
+    border: none;
+}
+
+.hero-wrapper{
+    height: 11vh;
+}
+
+/*I WAS WORKING ON POSITIONING HTE BIG TEXT AND SMALLER TEXT, I THINK I NEED TO CHANGE THE ANIMATION AND POSITIONING TO THE WRAPPER AND USE THE CLASSES FOR THE TEX T ITSELF TO ADJUST FONT SIZES*/
+.big-text{
+    position: absolute;
+    /* top: 30%;
+    left: 20%;
+    transform: translate(-30%, -20%); */
+    /* The font size is set to 3vmax, it will be responsize to a max size of 56px this keeps it from getting too big*/
+    font-size: min(3vmax, 56px);
+    top: 25vh;
+    left: 12vw;
+    
+}
+
+.smaller-text{
+    position: absolute;
+    top: 40vh;
+    left: 12vw;
+
+    /* transform: translate(-50%, -20%); */
+    font-size: min(2vmax, 35px);
+}
+
+.intro{
+    background: rgba(10, 17, 40, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    background: rgba(0, 31, 84, 1.0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+
+}
+.intro-text{
+    color:grey;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.5vh;
+
+    
+}
+
+.hide{
+    background:rgba(10, 17, 40, 1);
+    overflow: hidden;
+}
+
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+.current-project{
+    
+    overflow-y: hidden;
+    width: 25vw;
+    position: absolute;
+    top: 47vh;
+    left: 12vw;
+    transition: 500ms;
+    padding: 0.1rem;
+    border: 0.3rem solid rgba(18, 130, 162, 1.0);
+    background-color: white;
+    transition: 500ms;
+}
+
+.current-project a img{
+  
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    transition: 500ms;
+}
+
+
+
+.current-project:hover{
+    background-color: rgba(10, 17, 40, 1);
+    border: 0.3rem solid white;
+    transform: translateY(0%);
+}
+
+
+
+
+@media only screen and (max-width: 1000px){
+    .current-project{
+        width: 55vw;
+    }
+}

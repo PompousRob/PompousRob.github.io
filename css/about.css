@@ -1,0 +1,75 @@
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  margin: 0;
+  
+}
+.scrolling-image { 
+  background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.08)), url(overlayed-rob-mug.jpg) no-repeat;
+  padding-top: 56.25%;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  color:  white;
+  
+}
+.scrolling-image img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* width: 45.8%; */
+  width: 100%;
+}
+.scrolling-image h1 { 
+  position: fixed;
+  top: 12vh;
+  left: 1rem;
+  font-size: 9vw;
+  line-height: .8;
+  margin-top: 0;
+  width: 100vw;
+  text-shadow: 0.04em 0.02em rgba(3, 64, 120, 0.8);
+}
+/* .scrolling-image h1 span {
+  display: block;
+  font-size: 8.75vw;
+  padding-left: 6vh;
+  text-align: right;
+} */
+
+.scrolling-image h1 div {
+  letter-spacing: 5px;
+  font-weight: bolder;
+  font-size: 7vw;
+  padding-left: 6vh;
+ 
+}
+#second-line{
+  padding-left: 25%;
+  
+}
+
+#third-line{
+  font-size: 11vw;
+  padding-left: 30%;
+  
+}
+
+#fourth-line{
+  padding-left: 25%;
+
+}
+main { 
+  background: #fff;
+  position: relative;
+  border: 1px solid #fff;
+  font-family: 'IM Fell French Canon Pro';
+  font-size: 1.4rem;
+  padding: 2rem 25%;
+  line-height: 1.6;
+}
+@media all and (max-width: 400px) {
+  main { padding: 2rem; }
+}

@@ -1,0 +1,72 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body {
+    margin: 0;
+    
+  }
+
+main { 
+    background: #fff;
+    position: relative;
+    border: 1px solid #fff;
+    font-family: 'IM Fell French Canon Pro';
+    font-size: 1.4rem;
+    padding: 2rem 25%;
+    line-height: 1.6;
+  }
+  
+  @media all and (max-width: 400px) {
+    main { padding: 2rem; }
+  }
+
+
+
+  body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: rgba(0, 31, 84, 1.0);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgba(18, 130, 162, 1.0);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100vw;
+    margin: 2rem, auto;
+    justify-items: center;
+    
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 5%;
+  max-width: 900px;
+ 
+  
+ 
+}
