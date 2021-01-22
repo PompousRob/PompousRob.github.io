@@ -18,7 +18,7 @@ body{
     grid-template-columns: 1fr;
     border-bottom: 1px solid black;
     padding-left: 5px;
-    background-color: rgb(107, 24, 87);
+    background-color:  rgba(0, 31, 84, 1.0);
     height: 10vh;
     min-height: 25px;
 }
