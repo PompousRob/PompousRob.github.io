@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Whats on the bench</title>
+
+    <!-- <link rel="stylesheet" href="resetStyles.css"> -->
+
+    <!-- Self made CSS style sheets -->
+    <link rel="stylesheet" href="..\css\header.css">
+    <link rel="stylesheet" href="..\css\index.css">
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- This link was for the social media icons that im not currently using and are commented out on the bottom of the html -->
+    <script src="https://kit.fontawesome.com/9214bfc87c.js" crossorigin="anonymous"></script>
+    <!-- Jquery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <!-- Fonts and Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.js"></script>
+    <script> src = "https://unpkg.com/headroom.js"</script>
+    <!-- Document ready function -->
+    <script>    jQuery(document).ready(function ($) {
+            $("header").headroom();
+        });</script>
+</head>
+
+<body>
+
+    <header class="header-wrapper">
+        <nav>
+            <div class="logo">
+                <a href="..\html\index.html">The Bench</a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="..\html\latest.html">Latest</a></li>
+                <li><a href="..\html\projects.html">Projects</a></li>
+                <li><a href="..\html\articles.html">Articles</a></li>
+                <li><a href="..\html\about.html">About</a></li>
+                <li><a href="..\html\contact.html">Contact</a></li>
+            </ul>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+        </nav>
+    </header>
+
+    
+    <main>
+        <section class="landing">
+            <h2 class="big-text">Check out what's on the bench.</h2>
+            <h3 class="smaller-text">Current project:</h3>
+
+            <div class="current-project">
+                <a href="#">
+    
+                    <img src="..\css\wrenches.jpg" alt="">
+                    
+                </a> 
+
+            </div>
+            <!-- <h3 class="project-description">This project is in progress!</h3> -->
+        </section>
+    </main>
+
+    <div class="intro">
+        <div class="intro-text">
+            <h1 class="hide">
+                <span class="text">Exploring</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">the limits</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">of DIY</span>
+            </h1>
+        </div>
+    </div>
+    <div class="slider">
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+        integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+        crossorigin="anonymous"></script>
+
+    <script src="..\javascript\animations.js"></script>
+
+</body>
+<script>
+    let header = document.querySelector('header');
+    let headroom = new Headroom(header);
+    headroom.init();
+</script>
+
+<script src="..\javascript\methods.js"></script>
+
+</html>

@@ -1,0 +1,148 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects</title>
+
+<!-- <link rel="stylesheet" href="resetStyles.css"> -->
+
+<!-- Self made CSS style sheets -->
+    <link rel="stylesheet" href="..\css\header.css">
+    <link rel="stylesheet" href="..\css\projects.css">
+<!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<!-- This link was for the social media icons that im not currently using and are commented out on the bottom of the html -->
+    <script src="https://kit.fontawesome.com/9214bfc87c.js" crossorigin="anonymous"></script>
+<!-- Jquery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Headroom (Header animation) links    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.js"></script>
+    <script> src = "https://unpkg.com/headroom.js"</script>
+<!-- Document ready function -->
+    <script>    jQuery(document).ready(function ($) {
+            $("header").headroom();
+        });</script>
+</head>
+
+<body>
+
+    <header class="header-wrapper">  
+        <nav>
+            <div class="logo">
+                <a href="..\html\index.html">The Bench</a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="..\html\latest.html">Latest</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="..\html\articles.html">Articles</a></li>
+                <li><a href="..\html\about.html">About</a></li>
+                <li><a href="..\html\contact.html">Contact</a></li>
+            </ul>
+
+            <div class="burger"> 
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="space-filler"></div>
+
+    <div class="hero-wrapper">
+        <div class="hero-message">
+            <h2>Projects</h2>
+        </div>
+
+    </div>
+
+    <main class="main-content-section">
+        <ul class="polaroids">
+            <li>
+                <div class="cell box1"><a href="#" title="Barn Door"><img src="..\images\project-images\barn_door.jpg"
+                            alt=""></a></div>
+            </li>
+            <li>
+                <div class="cell box2"><a href="#" title="Coffee Table"><img
+                            src="..\images\project-images\coffee_table.jpg" alt=""></a>
+                </div>
+            </li>
+            <li>
+                <div class="cell box3"><a href="#" title="Craft Table"><img
+                            src="..\images\project-images\craft_table.jpg" alt=""></a>
+                </div>
+            </li>
+            <li>
+                <div class="cell box4"><a href="#" title="Dining Table"><img
+                            src="..\images\project-images\dining_table.jpg" alt=""></a>
+                </div>
+            </li>
+            <li>
+                <div class="cell box5"><a href="#" title="Mantle"><img src="..\images\project-images\mantle.jpg"
+                            alt=""></a></div>
+            </li>
+            <li>
+                <div class="cell box6"><a href="#" title="Shelves"><img src="..\images\project-images\shelves.jpg"
+                            alt=""></a></div>
+            </li>
+            <li>
+                <div class="cell box7"><a href="#" title="Default"><img src="..\images\project-images\craft_table.jpg"
+                            alt=""></a></div>
+            </li>
+            <li>
+                <div class="cell box8"><a href="#" title="Default"><img src="..\images\project-images\craft_table.jpg"
+                            alt=""></a></div>
+            </li>
+            <li>
+                <div class="cell box9"><a href="#" title="Default"><img src="..\images\project-images\craft_table.jpg"
+                            alt=""></a></div>
+            </li>
+            <li>
+                <div class="cell box10"><a href="#" title="Default"><img src="..\images\project-images\craft_table.jpg"
+                            alt=""></a></div>
+            </li>
+        </ul>
+    </main>
+    <div class="filler"></div>
+</body>
+<footer></footer>
+
+<script>
+    let header = document.querySelector('header');
+    let headroom = new Headroom(header);
+    headroom.init();
+</script>
+
+<script src="..\javascript\methods.js"></script>
+
+</html>
+
+<!-- <div class="logo">
+            <img id="logo" src="logo_white_transparent.png" alt="">
+        </div>
+
+        <div class="nav-wrapper">
+            <div><a href="#"></a>Latest</div>
+            <div><a href="#"></a>Projects</div>
+            <div><a href="#"></a>Blog</div>
+            <div><a href="#"></a>About</div>
+            <div><a href="#"></a>Contact</div>
+        </div>
+
+        <div class="social-media">
+            <div class="pinterest">
+                <a href="#"><i class="fab fa-pinterest-square"></i></a>
+            </div>
+            <div class="facebook">
+                <a href="#"> <i class="fab fa-facebook-square"></i></a>
+            </div>
+            <div class="instagram">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div> -->
