@@ -102,34 +102,68 @@ main{
 }
 
 .current-project{
-    
-    overflow-y: hidden;
-    width: 25vw;
-    position: absolute;
+    display: block;
+    overflow: hidden;
+   
+    max-width: 40vw;
+    position: relative;
     top: 47vh;
-    left: 12vw;
+    left: 7.5vw;
     transition: 500ms;
-    padding: 0.1rem;
+    padding: 0rem;
     border: 0.3rem solid rgba(18, 130, 162, 1.0);
     background-color: white;
     transition: 500ms;
+    cursor: pointer;
 }
 
 .current-project a img{
-  
-    max-width: 800px;
     width: 100%;
     height: auto;
     transition: 500ms;
 }
 
-
-
-.current-project:hover{
-    background-color: rgba(10, 17, 40, 1);
-    border: 0.3rem solid white;
-    transform: translateY(0%);
+.content{
+    opacity: 0;
+    font-size: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  background-color: rgba(10, 17, 40, 0.8);
+width: 100%;
+height: 100%;
+  -webkit-transition: all 400ms ease-out;
+  -moz-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  -ms-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  text-align: center;
 }
+
+.current-project .content:hover{
+    opacity: 1;
+    border: 0.4rem solid white;
+    
+}
+.current-project:hover{
+    border: 0.5rem solid rgb(10, 17, 40);
+}
+
+.current-project .content .text {
+color: white;
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    padding-top: 17%;
+  }
+
+.current-project .example .content:hover .text {
+    opacity: 1;
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+  }
 
 
 
