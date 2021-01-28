@@ -93,7 +93,7 @@ main .polaroids  li div a img {
   
   .polaroids li a:after {
     color: #333;
-    font-size: max(1.5vw, 45px);
+    font-size: max(1.5vw, 17px);
     content: attr(title);
     position: relative;
     top: 15px;
