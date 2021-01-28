@@ -93,7 +93,7 @@ main .polaroids  li div a img {
   
   .polaroids li a:after {
     color: #333;
-    font-size: 1.5vw;
+    font-size: max(1.5vw, 45px);
     content: attr(title);
     position: relative;
     top: 15px;
@@ -117,3 +117,20 @@ main .polaroids  li div a img {
       height: 5000px;
   }
 
+  @media screen and (max-width: 1400px){
+    .polaroids{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 900px){
+    .polaroids{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (max-width: 450px){
+    .polaroids{
+      grid-template-columns: 1fr;
+    }
+  }
