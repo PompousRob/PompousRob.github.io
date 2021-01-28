@@ -7,8 +7,10 @@ body {
   margin: 0;
   
 }
+
 .scrolling-image { 
-  background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.08)), url(overlayed-rob-mug.jpg) no-repeat;
+  background: linear-gradient(to right, rgba(247, 222, 222, 0.4), rgba(0,0,0,0.08)), url(overlayed-rob-mug.jpg) no-repeat;
+ 
   padding-top: 56.25%;
   background-size: cover;
   font-family: 'Poppins', sans-serif;
@@ -73,3 +75,21 @@ main {
 @media all and (max-width: 400px) {
   main { padding: 2rem; }
 }
+/* 
+@media screen and (max-width: 800px) and (orientation: portrait){
+
+  .header-wrapper{
+    background-image: linear-gradient(to right, rgba(247, 222, 222, 0.4), rgba(0,0,0,0.08));
+    border-bottom: none;
+  }
+
+.logo{
+  display: hidden;
+}
+.burger{
+  opacity: 1;
+}
+  .scrolling-image h1 { 
+    top: 3vh;
+  }
+} */

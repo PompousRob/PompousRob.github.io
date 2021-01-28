@@ -119,6 +119,15 @@
     headroom.init();
 </script>
 
+<script>
+   var allPolaroids =  document.querySelectorAll('.polaroids > li > div > a');
+   allPolaroids.forEach(element => {
+   element.addEventListener("click", function(){
+    alert("Sorry, \r\n\nI have a huge amount of content to write up, and I havent had a chance to write this one up yet! \r\n\nI'm continuing to catalogue older projects as I build this website. Check back at a later date for how I built this.") 
+    });
+});
+</script>
+
 <script src="..\javascript\methods.js"></script>
 
 </html>

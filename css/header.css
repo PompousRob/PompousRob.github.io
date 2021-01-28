@@ -18,8 +18,8 @@ body{
     grid-template-columns: 1fr;
     border-bottom: 1px solid black;
     padding-left: 5px;
-    /* background-color:  rgba(10, 17, 40, 1); */
-    background-color: darkslategray;
+    background-color:  rgba(10, 17, 40, 1);
+    /* background-color: darkslategray; */
     height: 10vh;
     min-height: 25px;
 }
